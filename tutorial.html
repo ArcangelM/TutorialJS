@@ -263,7 +263,8 @@
     <section class="light-section">
       <div class="container">
         <div class="row text-center">
-          <h4>Declaración</h4>
+		<!-- DECLARACION DE VARIABLES SEC 2-->
+          <h4><b>Declaración de Variables</b></h4>
         </div>
         <div class="row">
           <div class="col-md-6">
@@ -271,8 +272,8 @@
             <div class="code-wrap">
               <pre><code class="language-javascript">
               	var a=8;
-								b = 10;
-								let y = 5;
+	        b = 10;
+	        let y = 5;
               	}
               </code></pre>
             </div>
@@ -284,8 +285,8 @@
                 <div class="card-content">
                   <h3>Pudes declarar de 3 maneras</h3>
                   <p>var a=8.Esta sintaxis puede ser usada para declarar tanto variables locales como globales.</p>
-									<p>b=10. Esto siempre declara una variable global y no puede ser cambiada a nivel local.</p>
-									<p> let y = 5. Esta variable puede ser usada para declarar una variable local en un bloque de ámbito.</p>
+		              <p>b=10. Esto siempre declara una variable global y no puede ser cambiada a nivel local.</p>
+	                <p> let y = 5. Esta variable puede ser usada para declarar una variable local en un bloque de ámbito.</p>
                 </div>
               </div>
             </div>
@@ -296,30 +297,39 @@
     <section class="dark-pattern-section">
       <div class="container">
         <div class="row text-center">
-          <h4>Card with image</h4>
+          <h4>Evaluacion de Variables</h4>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <h5 class="text-center">Markup</h5>
+            <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
                <pre><code class="language-javascript">
-              	var nombre = "Cristian";
-              	alert("Hola Mundo" + nombre);
-              	if(nombre == 20){
-              		saludar();
+              	var a;
+                console.log('El valor de a es ' + a); // El valor de a es undefined
+
+                console.log('El valor de b es ' + b); // El valor de b es undefined
+                var b;
+                console.log('El valor de c es ' + c); // Uncaught ReferenceError: c no está definida
+								
+                let x;
+                console.log('El valor de x es ' + x); // El valor de x es undefined
+
+                console.log('El valor de y es ' + y); // Uncaught ReferenceError: y no está definida
+                let y;
               	}
               </code></pre>
             </div>
           </div>
           <div class="col-md-6">
-            <h5 class="text-center">Result</h5>
+            <h5 class="text-center">Resumen</h5>
             <div class="margin-block">
               <div class="card">
                 <div class="card-image card-image-with-hover"><img src="img/blog-thumbnail-4.jpg" alt=""></div>
                 <div class="card-content">
-                  <h3>Card content</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque autem deserunt dolores eveniet facere id magnam magni, nihil
-                    non nulla odio odit quaerat quis ratione similique sint sunt veniam?</p>
+                  <h3>Consideraciones</h3>
+                  <p>Una variable declarada usando la sentencia var o let sin asignarle un valor inicial tiene el valor undefined.
+                     Al intentar acceder a una variable no declarada dará como resultado la excepción ReferenceError.
+									   Se puede usar undefined para determinar si una variable tiene un valor.</p>
                 </div>
               </div>
             </div>
