@@ -264,11 +264,11 @@
             <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
               <pre><code class="language-javascript">
-              	{
-		var a=8;
-		b = 10;
-		let y = 5;
-              	}
+              
+          		var a=8;
+          		b = 10;
+          		let y = 5;
+              
               </code></pre>
             </div>
           </div>
@@ -299,7 +299,6 @@
             <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
                <pre><code class="language-javascript">
-	       {
               	var a;
                 console.log('El valor de a es ' + a); // El valor de a es undefined
 
@@ -312,7 +311,6 @@
 
                 console.log('El valor de y es ' + y); // Uncaught ReferenceError: y no está definida
                 let y;
-              	}
               </code></pre>
             </div>
           </div>
@@ -345,12 +343,12 @@
             <div class="code-wrap">
                <pre><code class="language-javascript">
               	if (true) {
-			  var x = 5;
-			  }
-			  console.log(x); // x vale 5
+        			     var x = 5;
+        			  }
+			          console.log(x); // x vale 5
               	if (true) {
-                          let y = 5;
-                          }
+                  let y = 5;
+                }
                 console.log(y);  // ReferenceError: y no está definida
               </code></pre>
             </div>
@@ -388,7 +386,7 @@
               	var x = 5;         // signa el valor de 5 x
                 var y = 2;         // signa el valor de 2 a y
                 var z = x + y;     // signa el valor de 7 a z (x + y)
-		var w = x * y      //signa el valor de 10 a w
+		            var w = x * y      //signa el valor de 10 a w
 		
 		
               </code></pre>
@@ -423,12 +421,12 @@
             <div class="code-wrap">
                <pre><code class="language-javascript">
               	var length = 16; // Number
-		var lastName = "Johnson"; // String
-		var x = {firstName:"John", lastName:"Doe"}; // Object
-		
-		var y = 16 + "Volvo"; // 16Volvo
-		var w = 16 + 4 + "Carro"; // 20Carro
-		var z =  "Carro" + 16 + 4; // Carro164  
+            		var lastName = "Johnson"; // String
+            		var x = {firstName:"John", lastName:"Doe"}; // Object
+            		
+            		var y = 16 + "Volvo"; // 16Volvo
+            		var w = 16 + 4 + "Carro"; // 20Carro
+            		var z =  "Carro" + 16 + 4; // Carro164  
               </code></pre>
             </div>
           </div>
@@ -473,17 +471,16 @@
             <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
               <pre><code class="language-javascript">
-              	{
-		var x = 5;
+              	
+		            var x = 5;
               	x==8 //false
-		x =="5" //true   igual a ?
-		x === "5" //false . Igual en tipo y valor
-		x != 4  //true  . no es igual
-		x > 3  // true
-		x <= 4 // false . Menor o igual
-		x !== 5  // false  . diferente al valor o al tipo
+            		x =="5" //true   igual a ?
+            		x === "5" //false . Igual en tipo y valor
+            		x != 4  //true  . no es igual
+            		x > 3  // true
+            		x <= 4 // false . Menor o igual
+            		x !== 5  // false  . diferente al valor o al tipo
 
-              	}
               </code></pre>
             </div>
           </div>
@@ -514,17 +511,16 @@
             <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
                <pre><code class="language-javascript">
-              	{
-		var x = 6;
-		var y = 3;
-		age = 17;
-		
-		(x < 10 && y > 1); // true   operador AND &&.
-		(x == 5 || y == 5); // false  operador OR ||.
-		!(x == y); // false  operador not !.
-		
-		var w = (age < 18) ? "Too young":"Old enough"; // w = "Too young", Condicional ternario
-              	}
+              	
+            		var x = 6;
+            		var y = 3;
+            		age = 17;
+            		
+            		(x < 10 && y > 1); // true   operador AND &&.
+            		(x == 5 || y == 5); // false  operador OR ||.
+            		!(x == y); // false  operador not !.
+            		
+            		var w = (age < 18) ? "Too young":"Old enough"; // w = "Too young", Condicional ternario
               </code></pre>
             </div>
           </div>
@@ -555,8 +551,8 @@
             <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
                <pre><code class="language-javascript">
-	       if (time < 10) {
-	         saludo = "buen dia";
+	    if (time < 10) {
+	      saludo = "buen dia";
 		} else if (time < 18) {
 		    saludo = "buena tarde";
 		} else {
@@ -627,8 +623,8 @@
             <div class="code-wrap">
               <pre><code class="language-javascript">
               	for (i = 0; i < 5; i++) {
-		text += "The number is " + i + "<br>";
-		}
+            		  text += "The number is " + i + "<br>";
+            		}
               </code></pre>
             </div>
           </div>
@@ -663,17 +659,17 @@
             <div class="code-wrap">
                <pre><code class="language-javascript">
               	//Bucle while
-		while (i < 10) {
-		    text += "The number is " + i;
-		    i++;
-		}
-		
-		//Bucle do While
-		do {
-		    text += "The number is " + i;
-		    i++;
-		}
-		while (i < 10);
+            		while (i < 10) {
+            		    text += "The number is " + i;
+            		    i++;
+            		}
+            		
+            		//Bucle do While
+            		do {
+            		    text += "The number is " + i;
+            		    i++;
+            		}
+            		while (i < 10);
               </code></pre>
             </div>
           </div>
@@ -705,14 +701,14 @@
             <div class="code-wrap">
                <pre><code class="language-javascript">
               	for (i = 0; i < 10; i++) {
-		    if (i === 3) { break; }  //se sale del bucle
-		    text += "El numero es " + i + "<br>";
-		}
-		
-		for (i = 0; i < 10; i++) {
-		    if (i === 3) { continue; } // se ignora el falor 3 y sigue la siguiente itera.
-		    text += "The number is " + i + "<br>";
-		}
+            		    if (i === 3) { break; }  //se sale del bucle
+            		    text += "El numero es " + i + "<br>";
+            		}
+            		
+            		for (i = 0; i < 10; i++) {
+            		    if (i === 3) { continue; } // se ignora el falor 3 y sigue la siguiente itera.
+            		    text += "The number is " + i + "<br>";
+            		}
               </code></pre>
             </div>
           </div>
@@ -759,8 +755,8 @@
             <div class="code-wrap">
               <pre><code class="language-javascript">
               	function myFunction(a, b) { // a,b son parametros
-		    return a * b;   // returna la multiplicacion
-		}
+		               return a * b;   // returna la multiplicacion
+		            }
               </code></pre>
             </div>
           </div>
@@ -796,19 +792,19 @@
             <div class="code-wrap">
                <pre><code class="language-javascript">
               	var person = {
-		    fullName: function() {
-			return this.firstName + " " + this.lastName;
-		    }
-		}
-		var person1 = {
-		    firstName:"John",
-		    lastName: "Doe",
-		}
-		var person2 = {
-		    firstName:"Mary",
-		    lastName: "Doe",
-		}
-		person.fullName.call(person1);  // retornara "John Doe"
+            		  fullName: function() {
+            			return this.firstName + " " + this.lastName;
+          		    }
+            		}
+            		var person1 = {
+            		    firstName:"John",
+            		    lastName: "Doe",
+            		}
+            		var person2 = {
+            		    firstName:"Mary",
+            		    lastName: "Doe",
+            		}
+            		person.fullName.call(person1);  // retornara "John Doe"
               </code></pre>
             </div>
           </div>
