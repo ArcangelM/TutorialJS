@@ -272,8 +272,8 @@
             <div class="code-wrap">
               <pre><code class="language-javascript">
               	var a=8;
-	        b = 10;
-	        let y = 5;
+	           b = 10;
+	           let y = 5;
               	}
               </code></pre>
             </div>
@@ -296,6 +296,7 @@
     </section>
     <section class="dark-pattern-section">
       <div class="container">
+	      <!--EVALUACION DE VARIABLES-->
         <div class="row text-center">
           <h4>Evaluacion de Variables</h4>
         </div>
@@ -324,12 +325,12 @@
             <h5 class="text-center">Resumen</h5>
             <div class="margin-block">
               <div class="card">
-                <div class="card-image card-image-with-hover"><img src="img/blog-thumbnail-4.jpg" alt=""></div>
+               
                 <div class="card-content">
                   <h3>Consideraciones</h3>
-                  <p>Una variable declarada usando la sentencia var o let sin asignarle un valor inicial tiene el valor undefined.
-                     Al intentar acceder a una variable no declarada dará como resultado la excepción ReferenceError.
-									   Se puede usar undefined para determinar si una variable tiene un valor.</p>
+                  <p>Una variable declarada usando la sentencia var o let sin asignarle un valor inicial tiene el valor undefined.</p>
+                     <p>Al intentar acceder a una variable no declarada dará como resultado la excepción ReferenceError.</p>
+		     <p>Se puede usar undefined para determinar si una variable tiene un valor.</p>
                 </div>
               </div>
             </div>
@@ -337,42 +338,35 @@
         </div>
       </div>
     </section>
+	  <!--AMBITO DE LA VARIABLE -->
     <section class="light-section">
       <div class="container">
         <div class="row text-center">
-          <h4>Card with footer</h4>
+          <h4>Ámbito de una Variable</h4>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <h5 class="text-center">Markup</h5>
+            <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
                <pre><code class="language-javascript">
-              	var nombre = "Cristian";
-              	alert("Hola Mundo" + nombre);
-              	if(nombre == 20){
-              		saludar();
-              	}
+              	if (true) {
+			  var x = 5;
+			  }
+			  console.log(x); // x vale 5
+              	
               </code></pre>
             </div>
           </div>
           <div class="col-md-6">
-            <h5 class="text-center">Result</h5>
+            <h5 class="text-center">Resumen</h5>
             <div class="margin-block">
               <div class="card">
                 <div class="card-content">
-                  <h3>Card content</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque autem deserunt dolores eveniet facere id magnam magni, nihil
-                    non nulla odio odit quaerat quis ratione similique sint sunt veniam?</p>
+                  <h3>Consideraciones</h3>
+                  <p>Cuando declaras una variable fuera de una función, esta es llamada variable global, porque esta disponible para cualquier otro código en el documento actual. Cuando declaras una variable dentro de una función, esta es llamada variable local, 
+		     porque está disponible solo dentro de esa función.</p>
                 </div>
-                <div class="card-footer">
-                  <ul class="inline-list center-align">
-                    <li><a class="social-icon" href="#"><i class="fa fa-globe"></i></a></li>
-                    <li><a class="social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="social-icon" href="#"><i class="fa fa-behance"></i></a></li>
-                    <li><a class="social-icon" href="#"><i class="fa fa-dribbble"></i></a></li>
-                  </ul>
-                </div>
+                
               </div>
             </div>
           </div>
