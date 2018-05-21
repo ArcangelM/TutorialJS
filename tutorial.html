@@ -784,15 +784,15 @@
     <section class="light-section">
       <div class="container">
         <div class="row text-center">
-          <h4>Ciclo For</h4>
+          <h4>Funciones</h4>
         </div>
         <div class="row">
           <div class="col-md-6">
             <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
               <pre><code class="language-javascript">
-              	for (i = 0; i < 5; i++) {
-		text += "The number is " + i + "<br>";
+              	function myFunction(a, b) { // a,b son parametros
+		    return a * b;   // returna la multiplicacion
 		}
               </code></pre>
             </div>
@@ -802,12 +802,13 @@
             <div class="margin-block">
               <div class="card">
                 <div class="card-content">
-                  <h3>For</h3>
-                  <p>El bucle for es a menudo la herramienta que va a utilizar cuando se quiere crear un bucle.</p>
-			<p>El bucle tiene la siguiente sintaxis:</p>
-			<p>for (statement 1; statement 2; statement 3) {</p>
-			<p>code block to be executed</p>
-			<p>}</p>
+                  <h3>Forma de la funcion</h3>
+                  <p>funciones declaradas no se ejecutan inmediatamente. Ellos son "salvados para su uso posterior", y se ejecutarán más adelante, cuando se invoca .</p>
+			<p>una funcion tiene la siguiente forma:</p>
+			<p>function functionName(parameters) {</p>
+				  <p>codigo a ejecutar </p>
+				<p>}</p>
+			
                 </div>
               </div>
             </div>
@@ -816,41 +817,44 @@
       </div>
     </section>
 	    
-	    <!--CICLO WHILE-->
+	    <!--LLAMADA DE FUNCIONES-->
     <section class="dark-pattern-section">
       <div class="container">
         <div class="row text-center">
-          <h4>Bucle While y Do/While</h4>
+          <h4>Llamada de una funcion</h4>
         </div>
         <div class="row">
           <div class="col-md-6">
             <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
                <pre><code class="language-javascript">
-              	//Bucle while
-		while (i < 10) {
-		    text += "The number is " + i;
-		    i++;
+              	var person = {
+		    fullName: function() {
+			return this.firstName + " " + this.lastName;
+		    }
 		}
-		
-		//Bucle do While
-		do {
-		    text += "The number is " + i;
-		    i++;
+		var person1 = {
+		    firstName:"John",
+		    lastName: "Doe",
 		}
-		while (i < 10);
+		var person2 = {
+		    firstName:"Mary",
+		    lastName: "Doe",
+		}
+		person.fullName.call(person1);  // retornara "John Doe"
               </code></pre>
             </div>
           </div>
           <div class="col-md-6">
-            <h5 class="text-center">Result</h5>
+            <h5 class="text-center">Resumen</h5>
             <div class="margin-block">
               <div class="card">
                 
                 <div class="card-content">
-                  <h3>While y Do/While</h3>
-                  <p>En el bucle WHILE se ejecuta un bloque de código siempre que una condición especificada sea verdadera.</p>
-	          <p>En el bucle DO/WHILEse ejecutará el bloque de código una vez, antes de comprobar si la condición es verdadera, luego se repetira el bucle mientras la condición sea verdadera.</p>
+                  <h3>Llamado</h3>
+                  <p>En JavaScript todas las funciones son métodos de objeto.</p>
+	          <p>En una definición de función, (this) se refiere al "dueño" de la función.</p>
+	           <p>Con call () , un objeto puede utilizar un método que pertenece a otro objeto.</p>
                 </div>
               </div>
             </div>
