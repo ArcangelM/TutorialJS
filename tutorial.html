@@ -353,7 +353,10 @@
 			  var x = 5;
 			  }
 			  console.log(x); // x vale 5
-              	
+              	if (true) {
+  let y = 5;
+}
+console.log(y);  // ReferenceError: y no está definida
               </code></pre>
             </div>
           </div>
@@ -365,6 +368,8 @@
                   <h3>Consideraciones</h3>
                   <p>Cuando declaras una variable fuera de una función, esta es llamada variable global, porque esta disponible para cualquier otro código en el documento actual. Cuando declaras una variable dentro de una función, esta es llamada variable local, 
 		     porque está disponible solo dentro de esa función.</p>
+			<p>en elcódigo el primer log registrará 5, porque el ámbito de x es la función dentro del cual se declara x, no el bloque, que en este caso es la sentencia if.</p>
+			<p>el anterior comportamiento cambia, cuando usamos la declaración let</p>
                 </div>
                 
               </div>
