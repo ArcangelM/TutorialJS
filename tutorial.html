@@ -271,9 +271,10 @@
             <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
               <pre><code class="language-javascript">
-              	var a=8;
-	           b = 10;
-	           let y = 5;
+              	{
+		var a=8;
+		b = 10;
+		let y = 5;
               	}
               </code></pre>
             </div>
@@ -305,6 +306,7 @@
             <h5 class="text-center">Codigo Ej.</h5>
             <div class="code-wrap">
                <pre><code class="language-javascript">
+	       {
               	var a;
                 console.log('El valor de a es ' + a); // El valor de a es undefined
 
@@ -355,7 +357,7 @@
 			  console.log(x); // x vale 5
               	if (true) {
                           let y = 5;
-                         }
+                          }
                 console.log(y);  // ReferenceError: y no está definida
               </code></pre>
             </div>
@@ -415,6 +417,45 @@
       </div>
     </section>
 	  
+    <!-- TIPOS DE DATOS-->
+	  
+    <section class="light-section">
+      <div class="container">
+        <div class="row text-center">
+          <h4>Tipos de Datos</h4>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="text-center">Codigo Ej.</h5>
+            <div class="code-wrap">
+               <pre><code class="language-javascript">
+              	var length = 16; // Number
+		var lastName = "Johnson"; // String
+		var x = {firstName:"John", lastName:"Doe"}; // Object
+		
+		var y = 16 + "Volvo"; // 16Volvo
+		var w = 16 + 4 + "Carro"; // 20Carro
+		var z =  "Carro" + 16 + 4; // Carro164  
+              </code></pre>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5 class="text-center">Resumen</h5>
+            <div class="margin-block">
+              <div class="card">
+                <div class="card-content">
+                  <h3>tipos de datos : números, cadenas, objetos y más</h3>
+                  <p>Para poder operar en variables, es importante saber algo sobre el tipo. Sin tipos de datos, un ordenador no puede resolver con seguridad esto.</p>
+		  <p>JavaScript evalúa las expresiones de izquierda a derecha. Diferentes secuencias pueden producir diferentes resultados.</p>
+	          <p>Al añadir un número y una cadena, JavaScript tratará el número como una cadena.</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
   <!-- ####################################################################################################-->
 
