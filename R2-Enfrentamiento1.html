@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tutorial JS</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta property="og:image" content="img/ogimage.jpg">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="css/assets.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CVarela+Round" rel="stylesheet">
+
+  <SCRIPT LANGUAGE="JavaScript">
+<!--
+var alfab="abcdefghijklmnñopqrstuvxyz"
+var nump=5
+var nrp=4
+function corrixe(){
+var acertos=0
+var sol=""
+fiestrar=open("","novar","width=300,height=350,scrollbars")
+fiestrar.document.write("<table border='0' width='100%' cellspacing='0' cellpadding='4' bgcolor='#FFFFF2'><tr><td><p align='center'>")
+for(i=1;i<=nump;i++){var senresp=true 
+  for(j=1;j<=nrp;j++){
+    if(eval("document.test.resp"+i+"["+(j-1)+"].checked")==true){
+      sol+=alfab.substring(j-1,j);senresp=false;break
+    }
+}
+if(senresp==true){sol+="-"}
+}
+var tempo= new Date()
+fiestrar.document.write("<br>Hora: "+tempo.getHours()+":"+tempo.getMinutes())
+fiestrar.document.write("<br>Fecha: "+tempo.getDate()+"/"+eval(tempo.getMonth()+1)+"/"+tempo.getYear())
+fiestrar.document.write("<p align='center'><table>")
+fiestrar.document.write("<tr><td colspan='4' align='center'><font size='5'>Resultados del test</font><p></td></tr>")
+fiestrar.document.write("<tr><td width='33' bgcolor='#FFF4F4'>"+
+"<p align='center'>Preg</td><td width='35' bgcolor='#FFF4F4' align='center'>"+
+"Solu</td><td width='35' bgcolor='#FFF4F4' align='center'>Resp</td>"+
+"<td width='35' bgcolor='#FFF4F4'><p align='center'>Resul</td></tr>")
+for(i=1;i<=sol.length;i++){
+  resposta=document.test.tras.value.substring(i-1,i)
+  solucion=sol.substring(i-1,i) 
+  if(resposta==solucion){
+  acertos+=1
+  fiestrar.document.write("<tr><td align='center'>"+i+
+  "</td><td align='center'>"+resposta+"</td><td align='center'>"+solucion+
+  "</td><td align='center'><font color='#009933'>acierto</font></td></tr>")
+  }
+  else{
+  fiestrar.document.write("<tr><td align='center'>"+i+"</td><td align='center'>"+resposta+
+  "</td><td align='center'>"+solucion+"</td><td align='center'><font color='#FF0000'>fallo</font></td></tr>")
+  }
+}
+nota=10/nump*acertos;
+if(Math.floor(nota)!=Math.ceil(nota)){cadea=""+nota;for(var i=0;i<=cadea.length;i++){
+if(cadea.charAt(i)=="."){nota=cadea.substring(0,i+3);break;}}}
+fiestrar.document.write("<tr><td colspan='4' align='center'>Aciertos: "+acertos+" de "+nump+"</td></tr>")
+fiestrar.document.write("<tr><td colspan='4' align='center'>Nota: "+nota+"</td></tr>")
+fiestrar.document.write("</td></tr><tr><td colspan='4' align='center'><p><form><input type='button' value='Cerrar' name='pecharf' onClick='window.close()' style='background-color: #FFCC66'></form></td></tr></table></td></tr></table>")
+fiestrar.document.write("</table>")
+fiestrar.document.close()
+}
+// -->
+</SCRIPT>
+</head>
+
+<body>
+  <div class="preloader-container">
+    <div class="loader"></div>
+  </div>
+  <header class="scrolled">
+    <div class="container">
+      <div class="row">
+        <a href="index.html" class="logo"><img src="img/top-logo.png" alt="Rocket" class="top-logo"> </a>
+        <a href="#" class="menutoggle">
+          <div class="bar"></div>
+        </a>
+        <ul class="menu">
+          <li class="top-bar-wrap">
+            <a href="https://neonunicorns.com/" class="close-icon-wrap">
+              <div class="close-icon"></div>
+            </a>
+          </li>
+          
+          <li><a href="./R3-Final.html" class="rocket-btn rocket-btn-ghost visible-lg-inline-block"
+              target="_blank">FINAL</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-title page-title-pattern">
+      <div class="container">
+        <div class="row">
+          <div class="page-title-wrap">
+            <h1>Competencia - Semifinal</h1>
+            <ul class="bread-crumbs inline-list">
+              <li class="active"><a href="./R2-Enfrentamiento1.html">Enfrentamiento #1</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section>
+      <form name="test" class="cuestionario">
+        <table width="100%"><tr><td align="center"><table>
+            <tr>
+            <td></td>
+            </tr></table></td></tr><tr><td>
+            <table><tr><td><font size="4" color="#FF00FF">1. </font></td><td bgcolor="#F2FFF2" width="100%">¿En qué lugar se ejecuta generalmente el código JavaScript?</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>a) </td><td><input type="radio" name="resp1"></td><td>Servidor</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>b) </td><td><input type="radio" name="resp1"></td><td>Cliente (en el propio navegador de internet)</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>c) </td><td><input type="radio" name="resp1"></td><td>Ambos</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>d) </td><td><input type="radio" name="resp1"></td><td>Todas las anteriores</td></tr></table><br>
+            <table><tr><td><font size="4" color="#FF00FF">2. </font></td><td bgcolor="#F2FFF2" width="100%">¿Cuál de estas instrucciones está correctamente escrita en Javascript?</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>a) </td><td><input type="radio" name="resp2"></td><td>if (a==0){ alert (a); }</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>b) </td><td><input type="radio" name="resp2"></td><td>if (a=0) print a;</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>c) </td><td><input type="radio" name="resp2"></td><td>if (a==0) { print [a] }</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>d) </td><td><input type="radio" name="resp2"></td><td>if (a==0): print a;</td></tr></table><br>
+            <table><tr><td><font size="4" color="#FF00FF">3. </font></td><td bgcolor="#F2FFF2" width="100%">Qué tipo de datos devuelve este código?
+            var f = function g(){ return 23; };
+            typeof g();</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>a) </td><td><input type="radio" name="resp3"></td><td>23</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>b) </td><td><input type="radio" name="resp3"></td><td>undefined</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>c) </td><td><input type="radio" name="resp3"></td><td>function</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>d) </td><td><input type="radio" name="resp3"></td><td>Error</td></tr></table><br>
+            <table><tr><td><font size="4" color="#FF00FF">4. </font></td><td bgcolor="#F2FFF2" width="100%">En JavaScript, ¿cómo se escribe una sentencia condicional para comprobar que la variable "i" es igual a 5?</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>a) </td><td><input type="radio" name="resp4"></td><td>if i=5 then</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>b) </td><td><input type="radio" name="resp4"></td><td>if(i=5)</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>c) </td><td><input type="radio" name="resp4"></td><td>if i==5 then</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>d) </td><td><input type="radio" name="resp4"></td><td>if(i==5)</td></tr></table><br>
+            <table><tr><td><font size="4" color="#FF00FF">5. </font></td><td bgcolor="#F2FFF2" width="100%">En una navegador web, para escribir algo en la consola se emplea:</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>a) </td><td><input type="radio" name="resp5"></td><td>console.append() </td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>b) </td><td><input type="radio" name="resp5"></td><td>console.print()</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>c) </td><td><input type="radio" name="resp5"></td><td>console.write()</td></tr></table>
+            <table><tr><td width="25">&nbsp;</td><td>d) </td><td><input type="radio" name="resp5"></td><td>console.log()</td></tr></table><br><br>
+            </td></tr>
+            <tr><td align="center" height="50"><input type="hidden" value="daddc" name="tras">
+            <input type="button" value="Puntuación" name="resultados" onClick="corrixe()" class="rocket-btn">
+            <input type="reset" value="Limpiar" name="limpar" class="rocket-btn rocket-btn-accent"></td></tr>
+            </td></tr>
+
+          </table>
+
+</form>
+
+
+
+    
+  </main>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="main-footer">
+        <div class="container">
+          <div class="row text-align-center">
+            <ul class="inline-list center-align">
+              <li><a class="social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="social-icon" href="#"><i class="fa fa-paper-plane"></i></a></li>
+              <li><a class="social-icon" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="social-icon" href="#"><i class="fa fa-globe"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <div class="container">
+          <div class="row text-align-center">© Copyright 2018 - TutorialJS. All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="scrollToTop" class="scrollToTop">
+    <div class="scrollToTop-circle">
+      <div class="scrollToTop-icon"></div>
+    </div>
+  </div>
+  <script src="js/assets.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
